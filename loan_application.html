@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Loan Application Process</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo.png" alt="Loan App Logo">
+        </nav>
+    </header>
+
+    <div class="loan-application-container">
+        <h1>Loan Application Process</h1>
+
+        <form id="loan-application-form" onsubmit="submitApplication(event)">
+            <!-- Documentation Details -->
+            <div class="input-group">
+                <label for="aadharFront">Aadhar Card (Front):</label>
+                <input type="file" id="aadharFront" accept="image/*" required>
+            </div>
+
+            <div class="input-group">
+                <label for="aadharBack">Aadhar Card (Back):</label>
+                <input type="file" id="aadharBack" accept="image/*" required>
+            </div>
+
+            <div class="input-group">
+                <label for="panCard">PAN Card:</label>
+                <input type="file" id="panCard" accept="image/*" required>
+            </div>
+
+            <!-- Personal Details -->
+            <div class="input-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" required>
+            </div>
+
+            <div class="input-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <!-- Income Details -->
+            <div class="input-group">
+                <label for="annualIncome">Annual Income:</label>
+                <input type="number" id="annualIncome" required>
+            </div>
+
+            <div class="input-group">
+                <label for="employmentType">Employment Type:</label>
+                <select id="employmentType" required>
+                    <option value="salaried">Salaried</option>
+                    <option value="self-employed">Self-Employed</option>
+                </select>
+            </div>
+
+            <!-- Documents Upload -->
+            <div class="input-group">
+                <label for="bankStatement">Bank Statement:</label>
+                <input type="file" id="bankStatement" accept="image/*" required>
+            </div>
+
+            <button type="submit">Submit Application</button>
+        </form>
+
+        <!-- Popup for Application Submitted -->
+        <div class="popup" id="success-popup">
+            <p>Application submitted successfully!</p>
+            <p>Please wait until you get a call back from our side.</p>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <!-- Add the JavaScript functions here -->
+    <script src="script2.js"></script>
+</body>
+</html>
