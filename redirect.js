@@ -15,7 +15,7 @@ function updateCountdown() {
         setTimeout(updateCountdown, 1000); // Update every 1000 milliseconds (1 second)
     } else {
         // Redirect to another page when the countdown reaches 0
-        window.location.href = 'index.html';
+        window.location.href = 'main.html';
     }
 }
 
