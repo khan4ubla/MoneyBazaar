@@ -1,13 +1,18 @@
-function submitApplication(event) {
-    event.preventDefault(); // Prevent the form from submitting in the traditional way
+const form = document.querySelector("form"),
+        nextBtn = form.querySelector(".nextBtn"),
+        backBtn = form.querySelector(".backBtn"),
+        allInput = form.querySelectorAll(".first input");
 
-    // Add logic to submit the application (you can send the data to your server here)
 
-    // Show the success popup
-    document.getElementById('success-popup').style.display = 'block';
+nextBtn.addEventListener("click", ()=> {
+    allInput.forEach(input => {
+        if(input.value != ""){
+            form.classList.add('secActive');
+        }else{
+            form.classList.remove('secActive');
+        }
+    })
+})
 
-    // Redirect to the about page after a delay (e.g., 3 seconds)
-    setTimeout(function() {
-        window.location.href = 'aboutus.html'; // Update the URL to your about page
-    }, 3000);
-}
+backBtn.addEventListener("click", () => form.classList.remove('secActive'));
+
