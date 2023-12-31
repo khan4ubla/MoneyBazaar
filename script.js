@@ -22,10 +22,6 @@ function openSignUpForm() {
 
             <label for="naem">Amount*</label>
             <input class="fil" type="number" name="amount" placeholder="Enter loan amount">
-
-            <label for="">Message*</label>
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Any aditional informarmation"></textarea>
-
             <button class="click">Submit &#10132;</button>
             
             <p style="  font-size: 10px; color: rgb(33, 33, 33); margin: 6px;">My money Bazaar</p>
