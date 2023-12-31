@@ -1,231 +1,144 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!----======== CSS ======== -->
-    <link rel="stylesheet" href="style2.css">
-     <style>
-         .bottom-navbar {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #fff;
-    border-top: 1px solid #ddd;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px 0;
-}
+	<title>Form Submit</title>
+	<style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif
+        }
 
-.bottom-navbar a {
-    text-decoration: none;
-    color: #4267B2;
-}
+        body{
+            background-color: #ffffff;
+        }
 
-.bottom-navbar img {
-    width: 24px;
-    height: 24px;
-}
+        .content{
+            text-align: ;
+            display: ;
+            position: relative;
+           
+        }
 
-     </style>
-    <!----===== Iconscout CSS ===== -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
-    <title>Regisration Form </title> 
-</head>
-<body> 
-      
-    <div class="container">
-        <head>
-            <img src="images/logo.png" alt="Loan App Logo">
-            <h1>Welcome to our Loan Platform</h1>
+        form{
+            display: flex;
+			flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            background-color: #eeeeee;
+            padding: 20px 30px;
+            overflow: hidden;
+            width: 345px;
+            border-radius: 15px;
+            top: 10px;
+            border: 1px solid rgb(141, 141, 141);
+            top: 30px;
+            position: relative;
             
-        </head>
-    <br><br>
-          <header>Registration</header>
+            
+            
 
-        <form action="#">
-            <div class="form first">
-                <div class="details personal">
-                    <span class="title">Personal Details</span>
+        }
+        label{
+            /* left: -90px; */
+            text-align: left;
+            margin: 10px;
+            position: relative;
+        }
 
-                    <div class="fields">
-                        <div class="input-field">
-                            <label>Full Name</label>
-                            <input type="text" placeholder="Enter your name" required>
-                        </div>
+        input{
+            padding: 10px 15px;
+            width: 320px;
+            margin-bottom: 0px;
+            border-radius: 6px;
+            border: 1px solid rgb(119, 119, 119);
+            display: flex;
+            position: relative;
+           
+            
+        }
 
-                        <div class="input-field">
-                            <label>Date of Birth</label>
-                            <input type="date" placeholder="Enter birth date" required>
-                        </div>
+        .click{
+            margin: 10px;
+            background-color: rgb(4, 162, 4);
+            color: #fff;
+            border: none;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 6px;
+            margin: 5px;
+            width: 346px;
+            cursor: pointer;
 
-                        <div class="input-field">
-                            <label>Email</label>
-                            <input type="text" placeholder="Enter your email" required>
-                        </div>
+        }
 
-                        <div class="input-field">
-                            <label>Mobile Number</label>
-                            <input type="number" placeholder="Enter mobile number" required>
-                        </div>
+        .click:hover{
+            background-color: rgb(5, 134, 5);
+        }
 
-                        <div class="input-field">
-                            <label>Gender</label>
-                            <select required>
-                                <option disabled selected>Select gender</option>
-                                <option>Male</option>
-                                <option>Female</option>
-                                <option>Others</option>
-                            </select>
-                        </div>
+        textarea{
+            padding: 10px 15px;
+            width: 322px;
+            height: 50px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            border: 1px solid rgb(122, 121, 121);
+            position: relative;
 
-                        <div class="input-field">
-                            <label>Occupation</label>
-                            <input type="text" placeholder="Enter your ccupation" required>
-                        </div>
-                    </div>
-                </div>
+        }
 
-                <div class="details ID">
-                    <span class="title">Identity Details</span>
+        .line{
+            font-size: 10px;
+            color: rgb(33, 33, 33);
+            margin: 6px;
+        }
+	
+	</style>
+</head>
+<body>
+	<div class="content">
+        <center>
+        <form method="post" action="" name="product" id="product">
+            <h1>Apply Now</h1>
+            <p style="font-size: 10px;">My money Bazaar</p>
+            
+            <label for="naem">Name*</label>
+            <input class="fil" type="text" name="name" placeholder="Enter Product Name" required>
 
-                    <div class="fields">
-                        <div class="input-field">
-                            <label>PAN Number</label>
-                            <input type="number" placeholder="Enter ID number" required>
-                        </div>
+            <label for="naem">Email*</label>
+            <input class="fil" type="text" name="email" placeholder="Enter your Email" required>
 
-                        <div class="input-field">
-                            <label>Adhaar Number</label>
-                            <input type="number" placeholder="Enter ID number" required>
-                        </div>
+            <label for="naem">Mobile number*</label>
+            <input class="fil" type="number" name="number" placeholder="Enter your mobile number" required>
 
-                        <div class="input-field">
-                            <label>Pin Code</label>
-                            <input type="number" placeholder="Enter Pincode" required>
-                        </div>
+            <label for="naem">Amount*</label>
+            <input class="fil" type="number" name="amount" placeholder="Enter loan amount">
 
-                        <div class="input-field">
-                            <label>Issued State</label>
-                            <input type="text" placeholder="Enter issued state" >
-                        </div>
+            <label for="">Message*</label>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Any aditional informarmation"></textarea>
 
-                        <div class="input-field">
-                            <label>Issued Date</label>
-                            <input type="date" placeholder="Enter your issued date" >
-                        </div>
+            <button class="click">Submit &#10132;</button>
+            
+            <p style="  font-size: 10px; color: rgb(33, 33, 33); margin: 6px;">My money Bazaar</p>
 
-                        <div class="input-field">
-                            <label>Expiry Date</label>
-                            <input type="date" placeholder="Enter expiry date" >
-                        </div>
-                    </div>
-
-                    <button class="nextBtn">
-                        <span class="btnText">Next</span>
-                        <i class="uil uil-navigator"></i>
-                    </button>
-                </div> 
-            </div>
-
-            <div class="form second">
-                <div class="details address">
-                    <span class="title">Address Details</span>
-
-                    <div class="fields">
-                        <div class="input-field">
-                            <label>Address Type</label>
-                            <input type="text" placeholder="Permanent or Temporary" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Nationality</label>
-                            <input type="text" placeholder="Enter nationality" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>State</label>
-                            <input type="text" placeholder="Enter your state" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>District</label>
-                            <input type="text" placeholder="Enter your district" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Block Number</label>
-                            <input type="number" placeholder="Enter block number" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Ward Number</label>
-                            <input type="number" placeholder="Enter ward number" required>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="details family">
-                    <span class="title">Family Details</span>
-
-                    <div class="fields">
-                        <div class="input-field">
-                            <label>Father Name</label>
-                            <input type="text" placeholder="Enter father name" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Mother Name</label>
-                            <input type="text" placeholder="Enter mother name" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Grandfather</label>
-                            <input type="text" placeholder="Enter grandfther name" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Spouse Name</label>
-                            <input type="text" placeholder="Enter spouse name" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Father in Law</label>
-                            <input type="text" placeholder="Father in law name" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Mother in Law</label>
-                            <input type="text" placeholder="Mother in law name" required>
-                        </div>
-                    </div>
-
-                    <div class="buttons">
-                        <div class="backBtn">
-                            <i class="uil uil-navigator"></i>
-                            <span class="btnText">Back</span>
-                        </div>
-                        
-                        <button class="sumbit">
-                            <span class="btnText">Submit</span>
-                            <i class="uil uil-navigator"></i>
-                        </button>
-                    </div>
-                </div> 
-            </div>
         </form>
+        </center>
+      
     </div>
- <div class="bottom-navbar">
-        <a href="index.html" onclick="goHome()"><img src="images/home-icon.png" alt="Home"></a>
-        <a href="login/index.html" onclick="goBack()"><img src="images/back-icon.png" alt="Back"></a>
-        <a href="#" onclick="reloadPage()"><img src="images/reload-icon.png" alt="Reload"></a>
-        <a href="aboutus.html" onclick="showAbout()"><img src="images/about-icon.png" alt="About"></a>
-    </div>
-    <script src="script2.js"></script>
-          <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyrnhLSgCnEh1BiTaTq5mHC1NltsATpQAzvqwxlvdy9YHw5l1SGvtFWn4LDgBRPMLgy/exec'
+        const form = document.forms['product']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank you! your form is submitted successfully." ))
+            .then(() => {  window.location.reload(); })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    <br>
 </body>
 </html>
+
