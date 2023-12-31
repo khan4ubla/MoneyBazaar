@@ -57,7 +57,7 @@ section p {
 
 button {
     width: 100%;
-    background-color: #4267B2;
+    background-color: #92e3a9;
     color: white;
     padding: 10px 10px;
     font-size: 25px;
@@ -161,7 +161,7 @@ button {
     box-sizing: border-box;
     width: 48%; /* Adjust the width as needed */
     padding: 20px;
-    background-color: #fff;
+    background-color: #92e3a9;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
