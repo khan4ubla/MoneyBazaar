@@ -58,13 +58,12 @@ section p {
 button {
     width: 100%;
     background-color: white;
-    color: white;
+    color: #276ce;
     padding: 10px 10px;
-    font-size: 25px;
+    font-size: 29px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
 }
 
 .bottom-navbar {
