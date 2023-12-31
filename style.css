@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    background-color: #39C260;
+    background-color: ##39c260b5;
     color: white;
     padding: 20px;
 }
@@ -53,7 +53,7 @@ section p {
 
 button {
     width: 100%;
-    background-color: #39C260;
+    background-color: ##39c260b5;
     color: white;
     padding: 10px 10px;
     font-size: 25px;
