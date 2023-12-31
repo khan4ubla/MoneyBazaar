@@ -12,7 +12,7 @@ function openSignUpForm() {
             <p style="font-size: 10px;">My money Bazaar</p>
             
             <label for="naem">Name*</label>
-            <input class="fil" type="text" name="name" placeholder="Enter Product Name" required>
+            <input class="fil" type="text" name="name" placeholder="Enter Full Name" required>
 
             <label for="naem">Email*</label>
             <input class="fil" type="text" name="email" placeholder="Enter your Email" required>
