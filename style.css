@@ -16,6 +16,7 @@ body {
 }
 
 header {
+     position: sticky;
     background-color: #4267B2;
     color: white;
     padding: 20px;
