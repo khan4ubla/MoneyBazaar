@@ -16,11 +16,11 @@ body {
 }
 
 header {
-     position: sticky;
+     position: fixed;
     background-color: #92E3A9;
     color: white;
-    padding: 20px;
      z-index: 10000;
+    padding-top: 10px;
 }
 
 header img {
