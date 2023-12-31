@@ -7,21 +7,29 @@ function openSignUpForm() {
     const signUpForm = document.createElement('div');
     signUpForm.className = 'sign-up-form';
     signUpForm.innerHTML = `
-        <h2>Sign Up</h2>
-        <form id="signupForm" onsubmit="return submitSignUpForm()">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" required>
+       <form method="post" action="" name="product" id="product">
+            <h1>Apply Now</h1>
+            <p style="font-size: 10px;">My money Bazaar</p>
+            
+            <label for="naem">Name*</label>
+            <input class="fil" type="text" name="name" placeholder="Enter Product Name" required>
 
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" required>
-             
-            <label for="email">Email ID:</label>
-            <input type="email" id="email" required>
+            <label for="naem">Email*</label>
+            <input class="fil" type="text" name="email" placeholder="Enter your Email" required>
 
-            <label for="mobileNumber">Mobile Number:</label>
-            <input type="tel" id="mobileNumber" required>
+            <label for="naem">Mobile number*</label>
+            <input class="fil" type="number" name="number" placeholder="Enter your mobile number" required>
 
-            <button type="submit">Sign Up</button>
+            <label for="naem">Amount*</label>
+            <input class="fil" type="number" name="amount" placeholder="Enter loan amount">
+
+            <label for="">Message*</label>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Any aditional informarmation"></textarea>
+
+            <button class="click">Submit &#10132;</button>
+            
+            <p style="  font-size: 10px; color: rgb(33, 33, 33); margin: 6px;">My money Bazaar</p>
+
         </form>
     `;
 
