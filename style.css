@@ -160,7 +160,7 @@ button {
     box-sizing: border-box;
     width: 48%; /* Adjust the width as needed */
     padding: 20px;
-    background-color: #92e3a9;
+    background-color: #92e3a9cf;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
 }
